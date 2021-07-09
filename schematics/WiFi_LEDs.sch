@@ -1,0 +1,240 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_FET:IRF540N Q?
+U 1 1 60E68731
+P 5100 3100
+F 0 "Q?" H 5304 3146 50  0000 L CNN
+F 1 "IRF520" H 5304 3055 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5350 3025 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 5100 3100 50  0001 L CNN
+	1    5100 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 60E6F443
+P 3950 3950
+F 0 "#PWR?" H 3950 3800 50  0001 C CNN
+F 1 "+12V" H 3965 4123 50  0000 C CNN
+F 2 "" H 3950 3950 50  0001 C CNN
+F 3 "" H 3950 3950 50  0001 C CNN
+	1    3950 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L WiFi_LEDs:NodeMCUv2 U?
+U 1 1 60E8A98C
+P 5850 2850
+F 0 "U?" H 5850 3615 50  0000 C CNN
+F 1 "NodeMCUv2" H 5850 3524 50  0000 C CNN
+F 2 "" H 5850 2050 50  0001 C CNN
+F 3 "" H 5850 2050 50  0001 C CNN
+	1    5850 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 60F2CBBB
+P 4950 3450
+F 0 "#PWR?" H 4950 3200 50  0001 C CNN
+F 1 "GNDREF" V 4955 3322 50  0000 R CNN
+F 2 "" H 4950 3450 50  0001 C CNN
+F 3 "" H 4950 3450 50  0001 C CNN
+	1    4950 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 60F2D87A
+P 4950 2850
+F 0 "#PWR?" H 4950 2600 50  0001 C CNN
+F 1 "GNDREF" V 4955 2722 50  0000 R CNN
+F 2 "" H 4950 2850 50  0001 C CNN
+F 3 "" H 4950 2850 50  0001 C CNN
+	1    4950 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 60F2E231
+P 4950 2250
+F 0 "#PWR?" H 4950 2000 50  0001 C CNN
+F 1 "GNDREF" V 4955 2122 50  0000 R CNN
+F 2 "" H 4950 2250 50  0001 C CNN
+F 3 "" H 4950 2250 50  0001 C CNN
+	1    4950 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 3450 5000 3450
+Wire Wire Line
+	5000 3450 5000 3500
+Wire Wire Line
+	4950 2850 5000 2850
+Wire Wire Line
+	5000 2850 5000 2900
+$Comp
+L Transistor_FET:IRF540N Q?
+U 1 1 60E690B3
+P 5100 2500
+F 0 "Q?" H 5304 2546 50  0000 L CNN
+F 1 "IRF520" H 5304 2455 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5350 2425 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 5100 2500 50  0001 L CNN
+	1    5100 2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4950 2250 5000 2250
+Wire Wire Line
+	5000 2250 5000 2300
+Wire Wire Line
+	3950 3950 3950 3300
+Wire Wire Line
+	3950 3300 4000 3300
+Wire Wire Line
+	4400 3100 4400 2700
+Wire Wire Line
+	4400 3500 4400 3900
+Wire Wire Line
+	4400 3900 5000 3900
+Wire Wire Line
+	4400 3300 5000 3300
+$Comp
+L Device:LED_ARGB D?
+U 1 1 61009E65
+P 4200 3300
+F 0 "D?" H 4200 3797 50  0000 C CNN
+F 1 "LED_ARGB" H 4200 3706 50  0000 C CNN
+F 2 "" H 4200 3250 50  0001 C CNN
+F 3 "~" H 4200 3250 50  0001 C CNN
+	1    4200 3300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2700 5000 2700
+Wire Wire Line
+	5300 3100 5450 3100
+$Comp
+L power:+12V #PWR?
+U 1 1 61057791
+P 5950 3950
+F 0 "#PWR?" H 5950 3800 50  0001 C CNN
+F 1 "+12V" H 5965 4123 50  0000 C CNN
+F 2 "" H 5950 3950 50  0001 C CNN
+F 3 "" H 5950 3950 50  0001 C CNN
+	1    5950 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5950 3950 5950 3650
+Wire Wire Line
+	5850 3650 5850 3900
+$Comp
+L power:GNDREF #PWR?
+U 1 1 60E6DFF5
+P 5600 3950
+F 0 "#PWR?" H 5600 3700 50  0001 C CNN
+F 1 "GNDREF" H 5605 3777 50  0000 C CNN
+F 2 "" H 5600 3950 50  0001 C CNN
+F 3 "" H 5600 3950 50  0001 C CNN
+	1    5600 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3900 5600 3900
+Wire Wire Line
+	5600 3900 5600 3950
+Wire Wire Line
+	5450 3300 5350 3300
+Wire Wire Line
+	5300 2500 5350 2500
+Wire Wire Line
+	5350 2500 5350 3000
+Wire Wire Line
+	5350 3000 5450 3000
+$Comp
+L Transistor_FET:IRF540N Q?
+U 1 1 60E65B91
+P 5100 3700
+F 0 "Q?" H 5304 3746 50  0000 L CNN
+F 1 "IRF520" H 5304 3655 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5350 3625 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 5100 3700 50  0001 L CNN
+	1    5100 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 3300 5350 3450
+Wire Wire Line
+	5350 3700 5300 3700
+$Comp
+L Device:R_Small R?
+U 1 1 61097AD3
+P 5200 3450
+F 0 "R?" V 5150 3400 50  0000 L CNN
+F 1 "PULLDOWN" V 5150 3200 50  0001 L CNN
+F 2 "" H 5200 3450 50  0001 C CNN
+F 3 "~" H 5200 3450 50  0001 C CNN
+	1    5200 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 3450 5000 3450
+Connection ~ 5000 3450
+Wire Wire Line
+	5300 3450 5350 3450
+Connection ~ 5350 3450
+Wire Wire Line
+	5350 3450 5350 3700
+$Comp
+L Device:R_Small R?
+U 1 1 6109ED31
+P 5200 2850
+F 0 "R?" V 5150 2800 50  0000 L CNN
+F 1 "PULLDOWN" V 5150 2600 50  0001 L CNN
+F 2 "" H 5200 2850 50  0001 C CNN
+F 3 "~" H 5200 2850 50  0001 C CNN
+	1    5200 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 2850 5300 3100
+Connection ~ 5300 3100
+Wire Wire Line
+	5100 2850 5000 2850
+Connection ~ 5000 2850
+$Comp
+L Device:R_Small R?
+U 1 1 610A4161
+P 5200 2250
+F 0 "R?" V 5150 2200 50  0000 L CNN
+F 1 "PULLDOWN" V 5150 2000 50  0001 L CNN
+F 2 "" H 5200 2250 50  0001 C CNN
+F 3 "~" H 5200 2250 50  0001 C CNN
+	1    5200 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 2250 5350 2250
+Wire Wire Line
+	5350 2250 5350 2500
+Connection ~ 5350 2500
+Wire Wire Line
+	5100 2250 5000 2250
+Connection ~ 5000 2250
+$EndSCHEMATC
