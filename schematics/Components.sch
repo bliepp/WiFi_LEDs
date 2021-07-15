@@ -25,17 +25,6 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Transistor_FET:IRF540N Q3
-U 1 1 60F024FB
-P 5400 3750
-F 0 "Q3" H 5600 3700 50  0000 L CNN
-F 1 "RFD3055LE" H 5600 3800 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-251-3_Vertical" H 5650 3675 50  0001 L CIN
-F 3 "https://www.mouser.com/datasheet/2/308/1/RFD3055LESM_D-2319857.pdf" H 5400 3750 50  0001 L CNN
-	1    5400 3750
-	-1   0    0    1   
-$EndComp
-$Comp
 L Transistor_FET:IRF540N Q2
 U 1 1 60F03EB6
 P 5400 3200
@@ -99,8 +88,6 @@ Wire Wire Line
 	4450 2550 4450 2300
 Connection ~ 4450 2300
 Wire Wire Line
-	4450 2300 5600 2300
-Wire Wire Line
 	4450 3150 4150 3150
 Connection ~ 4150 3150
 Wire Wire Line
@@ -125,8 +112,6 @@ Text HLabel 6050 3200 2    50   Input ~ 0
 GREEN
 Text HLabel 6050 2650 2    50   Input ~ 0
 BLUE
-Text HLabel 5600 2300 2    50   Output ~ 0
-3V3
 Text HLabel 4550 2850 2    50   Output ~ 0
 GND
 Wire Wire Line
@@ -209,4 +194,19 @@ Wire Wire Line
 Connection ~ 5600 2450
 Wire Wire Line
 	5600 2450 5850 2450
+Wire Wire Line
+	4450 2300 4800 2300
+Text HLabel 4800 2300 2    50   Output ~ 0
+3V3
+$Comp
+L Transistor_FET:IRF540N Q3
+U 1 1 60F024FB
+P 5400 3750
+F 0 "Q3" H 5600 3700 50  0000 L CNN
+F 1 "RFD3055LE" H 5600 3800 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-251-3_Vertical" H 5650 3675 50  0001 L CIN
+F 3 "https://www.mouser.com/datasheet/2/308/1/RFD3055LESM_D-2319857.pdf" H 5400 3750 50  0001 L CNN
+	1    5400 3750
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
