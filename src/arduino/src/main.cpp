@@ -5,16 +5,14 @@
 
 void send_state(AsyncWebServerRequest *r){
 	char buffer[15];
-	sprintf(buffer, "{\"on\": %s}", digitalRead(RED) ? "true" : "false");
+	sprintf(buffer, "{\"on\": %s}", led.on() ? "true" : "false");
 	r->send(200, "application/json", buffer);
 }
 
 void setup() {
 	// hardware setup
-	Serial.begin(9600);
-	pinMode(RED, OUTPUT);
-	pinMode(GREEN, OUTPUT);
-	pinMode(BLUE, OUTPUT);
+	Serial.begin(SERIAL_BAUD);
+	led.setColor(INIT_COLOR);
 	pinMode(LED_BUILTIN_AUX, OUTPUT);
 
 	digitalWrite(RED, HIGH); // default: led on
@@ -60,7 +58,8 @@ void setup() {
 	});
 
 	server.on("/api/toggle", HTTP_PUT, [](AsyncWebServerRequest *r){ // toggle LEDs
-		digitalWrite(RED, !digitalRead(RED));
+		led.toggle();
+		led.apply();
 		send_state(r);
 	});
 

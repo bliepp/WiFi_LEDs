@@ -19,7 +19,9 @@
 
 // data stored in flash memory
 #include "data.h"
+#include "led.h"
 
 
 // global variables
 AsyncWebServer server(PORT);
+LED led(RED, GREEN, BLUE, INIT_ON);

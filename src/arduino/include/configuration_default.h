@@ -1,3 +1,5 @@
+#define SERIAL_BAUD 9600
+
 #define WIFI_SSID ""
 #define WIFI_PASSWORD ""
 
@@ -7,5 +9,8 @@
 #define RED D4
 #define GREEN D3
 #define BLUE D0
+
+#define INIT_ON true
+#define INIT_COLOR 255 // for rgb value set to comma separated list
 
 #define SOFT_SWITCH 100
