@@ -19,7 +19,7 @@ U 1 1 60EFA784
 P 4150 2850
 F 0 "U?" V 4196 2955 50  0000 L CNN
 F 1 "LD1117_3V3" V 4105 2955 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4150 3050 50  0001 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp" H 4150 3050 50  0001 C CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 4250 2600 50  0001 C CNN
 	1    4150 2850
 	0    -1   -1   0   
