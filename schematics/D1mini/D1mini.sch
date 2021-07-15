@@ -71,7 +71,7 @@ U 1 1 60F12523
 P 1350 2550
 F 0 "J1" H 1250 2550 50  0000 C CNN
 F 1 "Barrel_Jack" H 1350 2350 50  0000 C CNN
-F 2 "" H 1400 2510 50  0001 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1400 2510 50  0001 C CNN
 F 3 "~" H 1400 2510 50  0001 C CNN
 	1    1350 2550
 	1    0    0    -1  
