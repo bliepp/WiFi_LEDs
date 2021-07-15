@@ -24,4 +24,4 @@
 
 // global variables
 AsyncWebServer server(PORT);
-LED led(RED, GREEN, BLUE, INIT_ON);
+LED strip(RED, GREEN, BLUE, INIT_ON);
