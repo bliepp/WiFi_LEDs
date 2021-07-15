@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name WiFi_LEDs)(type Legacy)(uri ${KIPRJMOD}/WiFi_LEDs.lib)(options "")(descr ""))
-)

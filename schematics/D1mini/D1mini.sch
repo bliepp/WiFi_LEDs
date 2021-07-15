@@ -1,0 +1,119 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 2250 2400 550  550 
+U 60EF9F72
+F0 "Components" 50
+F1 "../Components.sch" 50
+F2 "RED" I R 2800 2550 50 
+F3 "GREEN" I R 2800 2650 50 
+F4 "BLUE" I R 2800 2750 50 
+F5 "3V3" O R 2800 2850 50 
+F6 "GND" O R 2800 2450 50 
+F7 "VIN" I L 2250 2450 50 
+$EndSheet
+$Comp
+L MCU_Module:WeMos_D1_mini U?
+U 1 1 60EFBAE9
+P 3600 2550
+F 0 "U?" H 3800 1950 50  0000 C CNN
+F 1 "WeMos_D1_mini" V 3400 1900 50  0000 L CNN
+F 2 "Module:WEMOS_D1_mini_light" H 3600 1400 50  0001 C CNN
+F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 1750 1400 50  0001 C CNN
+	1    3600 2550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2800 2850 2850 2850
+Wire Wire Line
+	2800 2550 3200 2550
+Wire Wire Line
+	2800 2650 3200 2650
+Wire Wire Line
+	2800 2750 2900 2750
+Wire Wire Line
+	2900 2750 2900 2950
+Wire Wire Line
+	2900 2950 3200 2950
+Wire Wire Line
+	2850 3400 3500 3400
+Wire Wire Line
+	3500 3400 3500 3350
+Wire Wire Line
+	2850 2850 2850 3400
+$Comp
+L power:GND #PWR?
+U 1 1 60F14A50
+P 1650 2650
+F 0 "#PWR?" H 1650 2400 50  0001 C CNN
+F 1 "GND" V 1655 2522 50  0000 R CNN
+F 2 "" H 1650 2650 50  0001 C CNN
+F 3 "" H 1650 2650 50  0001 C CNN
+	1    1650 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Barrel_Jack J?
+U 1 1 60F12523
+P 1350 2550
+F 0 "J?" H 1250 2550 50  0000 C CNN
+F 1 "Barrel_Jack" H 1350 2350 50  0000 C CNN
+F 2 "" H 1400 2510 50  0001 C CNN
+F 3 "~" H 1400 2510 50  0001 C CNN
+	1    1350 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 2450 2100 2450
+$Comp
+L power:+12V #PWR?
+U 1 1 60F0705D
+P 2100 2700
+F 0 "#PWR?" H 2100 2550 50  0001 C CNN
+F 1 "+12V" H 2115 2873 50  0000 C CNN
+F 2 "" H 2100 2700 50  0001 C CNN
+F 3 "" H 2100 2700 50  0001 C CNN
+	1    2100 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2100 2450 2100 2700
+Connection ~ 2100 2450
+Wire Wire Line
+	2100 2450 2250 2450
+$Comp
+L power:GND #PWR?
+U 1 1 60F02616
+P 2800 2450
+F 0 "#PWR?" H 2800 2200 50  0001 C CNN
+F 1 "GND" V 2805 2322 50  0000 R CNN
+F 2 "" H 2800 2450 50  0001 C CNN
+F 3 "" H 2800 2450 50  0001 C CNN
+	1    2800 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60F03102
+P 3600 1750
+F 0 "#PWR?" H 3600 1500 50  0001 C CNN
+F 1 "GND" H 3605 1577 50  0000 C CNN
+F 2 "" H 3600 1750 50  0001 C CNN
+F 3 "" H 3600 1750 50  0001 C CNN
+	1    3600 1750
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC
