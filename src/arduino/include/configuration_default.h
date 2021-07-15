@@ -4,8 +4,8 @@
 //#define HOSTNAME ""
 #define PORT 80
 
-#define RED D5
-#define GREEN D6
-#define BLUE D8
+#define RED D4
+#define GREEN D3
+#define BLUE D0
 
 #define SOFT_SWITCH 100
