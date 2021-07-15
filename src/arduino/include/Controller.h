@@ -4,6 +4,11 @@
 #include <ESPAsyncWebServer.h>
 
 
+#ifndef LED_BUILTIN_AUX
+#define LED_BUILTIN_AUX LED_BUILTIN
+#endif
+
+
 // user defined settings
 #if __has_include("configuration.h")
 #	include <configuration.h>
