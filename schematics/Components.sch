@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr User 8268 5827
 encoding utf-8
-Sheet 2 2
+Sheet 1 1
 Title "Generic RGB LED strip controller"
 Date ""
 Rev ""
@@ -143,7 +143,7 @@ U 1 1 60F1E580
 P 3950 2200
 F 0 "R1" H 4009 2246 50  0000 L CNN
 F 1 "10k" H 4009 2155 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" H 3950 2200 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3950 2200 50  0001 C CNN
 F 3 "~" H 3950 2200 50  0001 C CNN
 	1    3950 2200
 	1    0    0    -1  
@@ -154,7 +154,7 @@ U 1 1 60F1ED74
 P 3950 2750
 F 0 "R2" H 4009 2796 50  0000 L CNN
 F 1 "10k" H 4009 2705 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" H 3950 2750 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3950 2750 50  0001 C CNN
 F 3 "~" H 3950 2750 50  0001 C CNN
 	1    3950 2750
 	1    0    0    -1  
@@ -165,7 +165,7 @@ U 1 1 60F1F2AA
 P 3950 3300
 F 0 "R3" H 4009 3346 50  0000 L CNN
 F 1 "10k" H 4009 3255 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" H 3950 3300 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3950 3300 50  0001 C CNN
 F 3 "~" H 3950 3300 50  0001 C CNN
 	1    3950 3300
 	1    0    0    -1  
