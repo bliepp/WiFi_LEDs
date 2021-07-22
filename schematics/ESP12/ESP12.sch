@@ -1,0 +1,127 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 8268 5827
+encoding utf-8
+Sheet 1 2
+Title "WiFi LED controller - D1 mini"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR0101
+U 1 1 60F14A50
+P 2950 2650
+F 0 "#PWR0101" H 2950 2400 50  0001 C CNN
+F 1 "GND" V 2955 2522 50  0000 R CNN
+F 2 "" H 2950 2650 50  0001 C CNN
+F 3 "" H 2950 2650 50  0001 C CNN
+	1    2950 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Barrel_Jack J1
+U 1 1 60F12523
+P 2650 2550
+F 0 "J1" H 2550 2550 50  0000 C CNN
+F 1 "Barrel_Jack" H 2650 2350 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 2700 2510 50  0001 C CNN
+F 3 "~" H 2700 2510 50  0001 C CNN
+	1    2650 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2450 3400 2450
+$Comp
+L power:+12V #PWR0102
+U 1 1 60F0705D
+P 3400 2700
+F 0 "#PWR0102" H 3400 2550 50  0001 C CNN
+F 1 "+12V" H 3415 2873 50  0000 C CNN
+F 2 "" H 3400 2700 50  0001 C CNN
+F 3 "" H 3400 2700 50  0001 C CNN
+	1    3400 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3400 2450 3400 2700
+Connection ~ 3400 2450
+Wire Wire Line
+	3400 2450 3550 2450
+$Comp
+L power:GND #PWR0104
+U 1 1 60F03102
+P 4900 1750
+F 0 "#PWR0104" H 4900 1500 50  0001 C CNN
+F 1 "GND" H 4905 1577 50  0000 C CNN
+F 2 "" H 4900 1750 50  0001 C CNN
+F 3 "" H 4900 1750 50  0001 C CNN
+	1    4900 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L RF_Module:ESP-12F U?
+U 1 1 60F9FE62
+P 5100 2550
+F 0 "U?" H 5100 1669 50  0000 C CNN
+F 1 "ESP-12F" H 5100 1760 50  0000 C CNN
+F 2 "RF_Module:ESP-12E" H 5100 2550 50  0001 C CNN
+F 3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf" H 4750 2650 50  0001 C CNN
+	1    5100 2550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4100 2750 4400 2750
+Wire Wire Line
+	4400 2750 4400 3150
+Wire Wire Line
+	4400 3150 4500 3150
+Wire Wire Line
+	4100 2650 4450 2650
+Wire Wire Line
+	4450 2650 4450 2950
+Wire Wire Line
+	4450 2950 4500 2950
+Wire Wire Line
+	4100 2550 4400 2550
+Wire Wire Line
+	4400 2550 4400 2150
+Wire Wire Line
+	4400 2150 4500 2150
+$Sheet
+S 3550 2400 550  550 
+U 60EF9F72
+F0 "Components" 50
+F1 "../Components.sch" 50
+F2 "RED" I R 4100 2750 50 
+F3 "GREEN" I R 4100 2650 50 
+F4 "BLUE" I R 4100 2550 50 
+F5 "3V3" O R 4100 2850 50 
+F6 "GND" O R 4100 2450 50 
+F7 "VIN" I L 3550 2450 50 
+$EndSheet
+$Comp
+L power:GND #PWR0103
+U 1 1 60F02616
+P 4100 2450
+F 0 "#PWR0103" H 4100 2200 50  0001 C CNN
+F 1 "GND" V 4105 2322 50  0000 R CNN
+F 2 "" H 4100 2450 50  0001 C CNN
+F 3 "" H 4100 2450 50  0001 C CNN
+	1    4100 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4100 2850 4350 2850
+Wire Wire Line
+	4350 2850 4350 3400
+Wire Wire Line
+	4350 3400 5100 3400
+Wire Wire Line
+	5100 3400 5100 3350
+$EndSCHEMATC
