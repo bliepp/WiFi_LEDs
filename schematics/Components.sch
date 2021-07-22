@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr User 8268 5827
 encoding utf-8
-Sheet 1 2
+Sheet 2 2
 Title "Generic RGB LED strip controller"
 Date ""
 Rev ""
@@ -23,28 +23,6 @@ F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp" H 2500 2700 50  0001 C CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 2600 2250 50  0001 C CNN
 	1    2500 2500
 	0    -1   -1   0   
-$EndComp
-$Comp
-L Transistor_FET:IRF540N Q2
-U 1 1 60F03EB6
-P 3750 2850
-F 0 "Q2" H 3950 2900 50  0000 L CNN
-F 1 "RFD3055LE" H 3950 2800 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-251-3_Vertical" H 4000 2775 50  0001 L CIN
-F 3 "https://www.mouser.com/datasheet/2/308/1/RFD3055LESM_D-2319857.pdf" H 3750 2850 50  0001 L CNN
-	1    3750 2850
-	-1   0    0    1   
-$EndComp
-$Comp
-L Transistor_FET:IRF540N Q1
-U 1 1 60F0615A
-P 3750 2300
-F 0 "Q1" H 3950 2350 50  0000 L CNN
-F 1 "RFD3055LE" H 3950 2250 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-251-3_Vertical" H 4000 2225 50  0001 L CIN
-F 3 "https://www.mouser.com/datasheet/2/308/1/RFD3055LESM_D-2319857.pdf" H 3750 2300 50  0001 L CNN
-	1    3750 2300
-	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	3650 3600 3000 3600
@@ -199,13 +177,35 @@ Wire Wire Line
 Text HLabel 3150 1950 2    50   Output ~ 0
 3V3
 $Comp
-L Transistor_FET:IRF540N Q3
-U 1 1 60F024FB
+L Transistor_FET:IRLB8721PBF Q1
+U 1 1 60FA2BCA
+P 3750 2300
+F 0 "Q1" H 3950 2350 50  0000 L CNN
+F 1 "IRLB8721PBF" H 3950 2250 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4000 2225 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irlb8721pbf.pdf?fileId=5546d462533600a40153566056732591" H 3750 2300 50  0001 L CNN
+	1    3750 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:IRLB8721PBF Q2
+U 1 1 60FA8D3E
+P 3750 2850
+F 0 "Q2" H 3950 2800 50  0000 L CNN
+F 1 "IRLB8721PBF" H 3950 2900 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4000 2775 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irlb8721pbf.pdf?fileId=5546d462533600a40153566056732591" H 3750 2850 50  0001 L CNN
+	1    3750 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:IRLB8721PBF Q3
+U 1 1 60FA9F10
 P 3750 3400
-F 0 "Q3" H 3950 3350 50  0000 L CNN
-F 1 "RFD3055LE" H 3950 3450 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-251-3_Vertical" H 4000 3325 50  0001 L CIN
-F 3 "https://www.mouser.com/datasheet/2/308/1/RFD3055LESM_D-2319857.pdf" H 3750 3400 50  0001 L CNN
+F 0 "Q3" H 3955 3354 50  0000 L CNN
+F 1 "IRLB8721PBF" H 3955 3445 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4000 3325 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irlb8721pbf.pdf?fileId=5546d462533600a40153566056732591" H 3750 3400 50  0001 L CNN
 	1    3750 3400
 	-1   0    0    1   
 $EndComp

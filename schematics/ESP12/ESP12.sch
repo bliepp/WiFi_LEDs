@@ -4,7 +4,7 @@ EELAYER END
 $Descr User 8268 5827
 encoding utf-8
 Sheet 1 2
-Title "WiFi LED controller - D1 mini"
+Title "WiFi LED controller - ESP12E/F"
 Date ""
 Rev ""
 Comp ""
