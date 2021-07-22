@@ -6,8 +6,8 @@
 //#define HOSTNAME ""
 #define PORT 80
 
-#define RED D4
-#define GREEN D3
+#define RED D3
+#define GREEN D4
 #define BLUE D0
 
 #define INIT_ON true

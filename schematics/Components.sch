@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr User 8268 5827
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title "Generic RGB LED strip controller"
 Date ""
 Rev ""
