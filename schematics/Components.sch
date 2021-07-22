@@ -73,17 +73,6 @@ Wire Wire Line
 Wire Wire Line
 	2800 2500 2800 2600
 Connection ~ 2800 2500
-$Comp
-L Device:LED_ARGB D1
-U 1 1 60F08554
-P 2800 3400
-F 0 "D1" H 2800 2933 50  0000 C CNN
-F 1 "LED_RGB" H 2800 3024 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2800 3350 50  0001 C CNN
-F 3 "~" H 2800 3350 50  0001 C CNN
-	1    2800 3400
-	-1   0    0    1   
-$EndComp
 Text HLabel 4400 3400 2    50   Input ~ 0
 RED
 Text HLabel 4400 2850 2    50   Input ~ 0
@@ -207,6 +196,17 @@ F 1 "IRLB8721PBF" H 3955 3445 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4000 3325 50  0001 L CIN
 F 3 "http://www.infineon.com/dgdl/irlb8721pbf.pdf?fileId=5546d462533600a40153566056732591" H 3750 3400 50  0001 L CNN
 	1    3750 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_AGRB D1
+U 1 1 60FB361C
+P 2800 3400
+F 0 "D1" H 2800 2933 50  0000 C CNN
+F 1 "LED_AGRB" H 2800 3024 50  0000 C CNN
+F 2 "" H 2800 3350 50  0001 C CNN
+F 3 "~" H 2800 3350 50  0001 C CNN
+	1    2800 3400
 	-1   0    0    1   
 $EndComp
 $EndSCHEMATC
